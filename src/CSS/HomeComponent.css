@@ -1,0 +1,9 @@
+.homeContainer {
+  width: 480px;
+  background: #191926;
+}
+
+.moviesSection {
+  display: flex;
+  flex-wrap: wrap;
+}
