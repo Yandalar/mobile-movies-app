@@ -1,0 +1,102 @@
+.movieCardContainer {
+  width: 210px;
+  height: 330px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-left: 18px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(99, 99, 117, 0.5);
+  background: radial-gradient(73.32% 73.32% at 23.55% 26.12%, rgba(64, 64, 86, 0.546214) 0%, rgba(34, 34, 50, 0.55) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.movieCard {
+  height: 260px;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.movieCard__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieCard__top--rate {
+  width: 35px;
+  height: 35px;
+  background: #191926;
+  opacity: 0.9;
+  border: 1px solid #191926;
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: large;
+}
+
+.movieCard__top--icon {
+  color: #fff;
+  opacity: 0.75;
+  transform: scale(1.8);
+  margin: 13px;
+}
+
+.movieCard__bottom {
+  max-height: 50px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.movieCard__bottom--genre {
+  color: #FF3466; 
+  font-weight: 300;
+  font-size: small;
+  margin-left: 10px;
+}
+
+.movieCard__bottom--reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: 6px;
+}
+
+.movieCard__bottom--reviews--active {
+  color: #FF3365;
+}
+
+.movieCard__bottom--reviews--inactive {
+  color: #6D6D80;
+}
+
+.movieCard__bottom--reviews p {
+  font-size: small;
+  margin-top: 0px;
+  margin-left: 5px;
+  font-weight: 800;
+  color: #6D6D80;
+}
+
+.movieCard__info {
+  max-height: 60px;
+  color: #ECECEC;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.movieCard__info h2 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.movieCard__info p {
+  margin-top: -10px;
+  font-weight: 800;
+}
