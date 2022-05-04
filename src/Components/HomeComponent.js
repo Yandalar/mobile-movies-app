@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import "../CSS/HomeComponent.css";
+import "../CSS/SearchBar.css";
 import { searchByTitle } from "../API/API";
 import MovieCard from "./MovieCard";
 
