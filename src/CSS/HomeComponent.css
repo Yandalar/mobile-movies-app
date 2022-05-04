@@ -1,9 +1,12 @@
 .homeContainer {
   width: 480px;
+  min-height: 100vh;
   background: #191926;
+  border-radius: 32px 32px 0px 0px;
 }
 
 .moviesSection {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }

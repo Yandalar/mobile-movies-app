@@ -1,6 +1,6 @@
 .searchBar {
   width: 95%;
-  margin-bottom: 80px;
+  margin-bottom: 100
 }
 
 .searchBar input {
@@ -12,6 +12,7 @@
   color: white;
   padding-left: 15px;
   font-size: large;
+  margin-top: 35px;
 }
 
 .searchBar__icon {

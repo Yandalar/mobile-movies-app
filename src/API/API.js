@@ -7,12 +7,16 @@ export const searchByTitle = (search) => {
     },
   };
 
+  // Making the call to the API
   return fetch(
     `https://movie-database-alternative.p.rapidapi.com/?s=${search}&r=json&type=movie&page=1`,
     options
   )
     .then((response) => response.json())
     .then((response) => {
+      // The first Endpoint does not provide all the info we need, so here we make a
+      // call to the second Endpoint and generate an Array with all the info from the
+      // first, and the second Endpoint.
       return Promise.all(
         response.Search.map((movie) => {
           return fetch(
@@ -24,11 +28,14 @@ export const searchByTitle = (search) => {
               return {
                 name: movie.Title,
                 poster: movie.Poster,
+                id: movie.imdbID,
                 rating: detail.imdbRating,
                 rate: detail.Rated,
                 genre: detail.Genre,
                 runtime: detail.Runtime,
                 votes: detail.imdbVotes,
+                plot: detail.Plot,
+                actors: detail.Actors,
               };
             });
         })
